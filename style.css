@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headUserImg img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.logo img {
+  height: 25px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+body {
+  max-width: 1900px;
+  margin: auto;
+}
+header {
+  height: 60px;
+  justify-content: space-between;
+  padding: 5px 20px;
+  gap: 10px;
+}
+
+.menuLogo {
+  gap: 25px;
+}
+
+.searchbox {
+  border: 1px solid #d7d7d7;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.searchbox input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  padding-left: 10px;
+  font-weight: 600;
+}
+.searchbox i {
+  height: 40px;
+  width: 60px;
+  background-color: #f0f0f0;
+  border-radius: 0 30px 30px 0;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.micIcon i,
+.headIcon2 i {
+  height: 45px;
+  width: 45px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  line-height: 45px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.searchboxMic {
+  gap: 20px;
+}
+
+.micIcon i:hover,
+.headIcon2 i:hover {
+  background-color: #bbbbbb;
+}
+
+.headIcon1 {
+  height: 35px;
+  width: 100px;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.headIcon1 i {
+  font-size: 1.1rem;
+  margin: 0 5px;
+}
+.headIcon1:hover {
+  background-color: #e4e4e4;
+}
+
+.headerRight {
+  gap: 15px;
+}
+.headIcon2 {
+  position: relative;
+}
+.headIcon2::after {
+  position: absolute;
+  content: "9+";
+  height: 16px;
+  width: 22px;
+  background-color: red;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  text-align: center;
+  top: 5px;
+  left: 25px;
+}
+@media (max-width: 1200px) {
+  .searchbox input {
+    max-width: 300px;
+  }
+}
+@media (max-width: 900px) {
+  .searchbox input {
+    max-width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .searchbox input {
+    display: none;
+  }
+  .searchbox i {
+    width: 40px;
+    border-radius: 50%;
+  }
+  .searchbox {
+    border: none;
+  }
+  .searchbox i:hover {
+    background-color: #bbbbbb;
+  }
+  .searchboxMic {
+    gap: 5px;
+  }
+  .logo img {
+    height: 20px;
+  }
+  .menuLogo {
+    gap: 10px;
+  }
+  .headIcon1 {
+    height: 30px;
+    width: 90px;
+    font-style: 0.9rem;
+  }
+  .headIcon1 i {
+    font-size: 0.9rem;
+  }
+  header {
+    gap: 5px;
+  }
+  .headerRight {
+    gap: 10px;
+  }
+
+  .micIcon i,
+  .headIcon2 i {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+  .headIcon2 i {
+    margin-right: 5px;
+  }
+}
